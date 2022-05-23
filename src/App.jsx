@@ -15,7 +15,7 @@ export default function App() {
     setLoading(true);
     axios
       .get(
-        `https://json-server-mocker-masai.herokuapp.com/candidates?_page=${page}&_limit=5?_sort="salary"&_order=${order}`
+        `https://json-server-mocker-masai.herokuapp.com/candidates?_page=${page}&_limit=5?_sort=salary&_order=${order}`
         // `http://localhost:3005/candidates?_page=${page}&_limit=5?_sort=salary&_order=${order}`
       )
       .then((res) => {
